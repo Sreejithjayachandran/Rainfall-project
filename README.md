@@ -12,7 +12,7 @@ analysis-ready dataset (plus summary reports) that can be reused in future Data 
 | **Information it contains** | Station name, district, tehsil, river/basin details, latitude/longitude, date-time of reading, and daily rainfall in mm for stations across Kerala. |
 | **Type** | Structured (rows and columns). |
 | **Format** | CSV, 20 columns. |
-| **Update frequency** | Rainfall is recorded manually every day; this file is a static snapshot covering 01 Jan 2021 – 31 Dec 2021. |
+| **Update frequency** | Rainfall is recorded manually every day; this file is a static snapshot covering 01 Jan 2021 – 31 Dec 2025. |
 
 ## ETL Workflow
 ```
