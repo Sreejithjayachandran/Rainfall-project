@@ -7,7 +7,7 @@ analysis-ready dataset (plus summary reports) that can be reused in future Data 
 ## Data Source
 | Question | Answer |
 |---|---|
-| **Data source** | Kerala manual daily rainfall station data, 2021 (`rainfall_1.csv`). The column layout (LGD codes, basin/tributary, acquisition time) matches Indian government water-resources data such as India-WRIS. *(Team: add the exact download link here.)* |
+| **Data source** | Kerala manual daily rainfall station data, 2021 (`rainfall_1.csv`). The column layout (LGD codes, basin/tributary, acquisition time) matches Indian government water-resources data such as India-WRIS. https://nwdp.nwic.gov.in/dataset/rainfall-kerala-surface-water-manual-daily/resource/d175f1f6-cccf-4980-97ab-877650d05074 |
 | **Why chosen** | Real open-government data, large enough (53,162 rows) to need proper cleaning, and rainfall is useful for forecasting, flood and agriculture projects. |
 | **Information it contains** | Station name, district, tehsil, river/basin details, latitude/longitude, date-time of reading, and daily rainfall in mm for stations across Kerala. |
 | **Type** | Structured (rows and columns). |
