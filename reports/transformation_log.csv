@@ -1,0 +1,15 @@
+step,reason,rows_before,rows_after
+T1 Rename columns,Convert to short snake_case names so they are easy to use in code,53162,53162
+T2 Remove duplicate rows,Exact duplicates would double-count rainfall,53162,53162
+T3 Remove unwanted columns,"Dropped row-id and columns >90% empty: block, village, subtributary, sub_subtributary",53162,53162
+T4 Standardize text,Trim spaces and Title Case so the same name is never counted as two values,53162,53162
+T5 Handle missing values,Fill missing river/basin details with 'Unknown' so no rows are lost,53162,53162
+T6 Convert date format,Text timestamps cannot be sorted or grouped by month; parsed to datetime,53162,53162
+T7 Change data types,"Codes as integers, coordinates and rainfall as floats",53162,53162
+T8 Remove invalid values,"Dropped rows with unparseable dates, missing/negative rainfall or coordinates outside Kerala",53162,53162
+T8b Remove duplicate station-days,One reading per station per day; keeps the first,53162,52522
+T9 Split date into parts,Year/month/weekday columns make monthly and trend analysis easy,52522,52522
+T10 Create season column,"Kerala rainfall is driven by monsoon seasons, so season is a key category",52522,52522
+T11 Create rainfall category,IMD intensity classes (Very Light ... Extremely Heavy) for each reading,52522,52522
+T12 Aggregation + ranking,Station total rainfall and rank (1 = wettest) added to each row,52522,52522
+T13 Sort records,Ordered by station then date for time-series use,52522,52522
