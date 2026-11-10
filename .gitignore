@@ -19,3 +19,4 @@ Thumbs.db
 
 # Large duplicate data file in EDA folder (canonical copy is in ETL/output)
 EDA/output/analysis_ready_rainfall.csv
+
